@@ -1,9 +1,15 @@
 package Interface;
 
-public class Retangulo {
+public class Retangulo implements AreaCalculavel {
 	private double retangulo;
 	private double lado;
 	private double altura;
+
+	@Override
+	public double calculaArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	public double calculaRetangulo() {
 		
@@ -34,6 +40,5 @@ public class Retangulo {
 	public void setAltura(double altura) {
 		this.altura = altura;
 	}
-	
 	
 }

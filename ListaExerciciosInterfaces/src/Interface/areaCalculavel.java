@@ -1,5 +1,6 @@
 package Interface;
 
-public class areaCalculavel {
+public interface AreaCalculavel {
 
+	public double calculaArea();
 }

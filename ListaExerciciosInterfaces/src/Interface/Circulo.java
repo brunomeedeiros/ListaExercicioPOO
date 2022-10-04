@@ -1,12 +1,18 @@
 package Interface;
 
-public class Circulo {
+public class Circulo implements AreaCalculavel {
 	
 	private final double PI = 3.14159;
 	private double circulo;
 	private double raio;
 
-	 public double calculaQuadrado() {
+	@Override
+	public double calculaArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	 public double calculaCirculo() {
 		
 		circulo = PI * (raio * raio);
 		
@@ -32,5 +38,5 @@ public class Circulo {
 	public double getPI() {
 		return PI;
 	}
-	 
+
 }

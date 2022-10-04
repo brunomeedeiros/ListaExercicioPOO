@@ -1,11 +1,20 @@
 package Interface;
 
-public class Quadrado {
+public class Quadrado implements AreaCalculavel{
 	private double lado;
+	private double quadrado;
+	
+	@Override
+	public double calculaArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	 public double calculaQuadrado() {
 		
-		 return (lado * lado);
+		 quadrado = lado * lado;
+		 
+		 return (quadrado);
 		
 	 }
 
@@ -16,6 +25,16 @@ public class Quadrado {
 	public void setLado(double lado) {
 		this.lado = lado;
 	}
+
+	public double getQuadrado() {
+		return quadrado;
+	}
+
+	public void setQuadrado(double quadrado) {
+		this.quadrado = quadrado;
+	}
+
+	
 	 
 	 
 	 
